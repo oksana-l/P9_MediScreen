@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mediscreen</title>
+    <meta charset="UTF-8" />
+    <!--    <meta name="viewport"-->
+    <!--          content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <link rel="stylesheet" type="text/css"
+          href="/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container">
+    <div>
+        <div>
+            <a th:href="@{/infoPatient/{id}(id=${patientDto.id})}"
+               class="btn btn-danger btn-sm">Return Info Patient</a>
+        </div>
+        <div>
+            <a class="clickable" href="/">Return patient's list</a>
+        </div>
+        <div>
+            <h2>Notes</h2>
+        </div>
+        <div class="col-6 text-right">
+            <a th:if="${patientDto.id}" class="btn btn-success btn-lg" role="button"
+               th:href="@{/infoPatient/{id}/note(id=${patientDto.id})}" th:object="${patientDto}">Create note</a>
+        </div>
+
+    </div>
+    <table class="table">
+        <thead class="thread-light">
+        <tr>
+            <th style="padding: 5px;">Date</th>
+            <th style="padding: 5px;">Note</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="note : ${notes}">
+            <td style="text-align: center; padding: 5px;" th:text="${note.date}"></td>
+            <td style="text-align: center; padding: 5px;">
+                <a th:href="@{/note/{id}(id=${note.id})}" class="btn btn-info">Info</a>
+                <a th:href="@{/note/{id}/edit(id=${note.id})}" class="btn btn-info">Edit</a>
+                <a th:href="@{/note/{id}/delete(id=${note.id})}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+     <script type="text/javascript" src="/webjars/bootstrap/4.0.0-2/js/bootstrap.min.js"></script>
+</body>
+</html>

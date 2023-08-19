@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Diabetes Risk Assessment</title>
+    </head>
+    <body>
+        <div>
+            <a class="clickable" href="/">Return patient's list</a>
+            <p>Nom : <span th:text="${rapport.firstName}"></span>
+                     <span th:text="${rapport.lastName}"></span></p>
+            <p>Âge : <span th:text="${rapport.age}"></span></p>
+            <p>Catégorie du risque : <span th:text="${rapport.riskCategory}"></span></p>
+        </div>
+    </body>
+</html>

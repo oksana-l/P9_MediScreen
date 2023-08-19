@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Info note</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h2>Info Note</h2>
+            </div>
+            <pre th:text="${noteDto.note}"></pre>
+            <div>
+                <a th:href="@{/note/{id}/edit(id=${noteDto.id})}"
+                   class="btn btn-info">Edit</a>
+                <a th:href="@{/note/{id}/delete(id=${noteDto.id})}"
+                   class="btn btn-danger">Delete</a>
+                <a th:href="@{/infoPatient/{id}/(id=${noteDto.patientId})}"
+                   class="btn btn-danger btn-sm">Return Notes</a>
+            </div>
+        </div>
+
+    </body>
+</html>

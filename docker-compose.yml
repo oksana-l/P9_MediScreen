@@ -1,0 +1,65 @@
+version: '3'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootroot
+      MYSQL_DATABASE: mediscreen
+
+  patient-info:
+    build:
+      context: ./P9_MediScreen_PatientInfo
+      dockerfile: Dockerfile
+    container_name: patient-info
+    ports:
+      - "8081:8080"
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_SERVICE: mysql:3306
+
+  note:
+    build:
+      context: ./P9_MediScreen_Note
+      dockerfile: Dockerfile
+    container_name: note
+    ports:
+      - "8082:8080"
+    depends_on:
+      - mongodb
+    environment:
+      MONGODB_SERVICE: mongodb
+
+  assessment:
+    build:
+      context: ./P9_MediScreen_Assessment
+      dockerfile: Dockerfile
+    container_name: assessment
+    ports:
+      - "8083:8080"
+    environment:
+      NOTE_SERVICE: http://note:8080
+      PATIENT_SERVICE: http://patient-info:8080
+
+  ui:
+    build:
+      context: ./P9_MediScreen_UI
+      dockerfile: Dockerfile
+    container_name: ui
+    ports:
+      - "8080:8080"
+    environment:
+      NOTE_SERVICE: http://note:8080
+      PATIENT_SERVICE: http://patient-info:8080
+      ASSESSMENT_SERVICE: http://assessment:8080
+
