@@ -53,11 +53,6 @@ public class PatientController {
         return ResponseEntity.created(location).body(patientAdded);
     }
 
-    @PostMapping(consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
-    public ResponseEntity<PatientDTO> addPatientForm(@NotNull @Valid PatientDTO patientDto) {
-        return addPatient(patientDto);
-    }
-
     @GetMapping("/{id}")
     public ResponseEntity<PatientDTO> showPatient(@PathVariable int id) {
         return ResponseEntity.ok(patientService.getPatient(id));

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/P9_MediScreen_Assessment/P9_MediScreen_Assessment.iml" filepath="$PROJECT_DIR$/P9_MediScreen_Assessment/P9_MediScreen_Assessment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P9_MediScreen_Note/P9_MediScreen_Note.iml" filepath="$PROJECT_DIR$/P9_MediScreen_Note/P9_MediScreen_Note.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P9_MediScreen_PatientInfo/P9_MediScreen_PatientInfo.iml" filepath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/P9_MediScreen_PatientInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P9_MediScreen_UI/P9_MediScreen_UI.iml" filepath="$PROJECT_DIR$/P9_MediScreen_UI/P9_MediScreen_UI.iml" />
+    </modules>
+  </component>
+</project>

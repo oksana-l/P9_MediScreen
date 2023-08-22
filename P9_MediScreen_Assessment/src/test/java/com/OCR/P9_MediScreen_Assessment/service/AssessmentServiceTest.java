@@ -49,9 +49,9 @@ public class AssessmentServiceTest {
                         "Patient states that they are 'feeling terrific' " +
                         "Weight at or below recommended level"));
         notesPatient2.add(new NoteDTO(null, 2, LocalDate.now().toString(),
-                "Patient: TestBorderline Practitioner's notes/recommendations: " +
-                        "Patient states that they are feeling a great deal of stress at work " +
-                        "Patient also complains that their hearing seems Abnormal as of late"));
+                "Tests de laboratoire indiquant une Microalbumine élevée" +
+                        "Le laboratoire rapporte que l'hémoglobine A1C dépasse le niveau recommandé " +
+                        "Le patient déclare qu’il fume depuis longtemps "));
         notesPatient2.add(new NoteDTO("3jwhs5ws", 2, LocalDate.now().toString(),
                 "Patient: TestBorderline Practitioner's notes/recommendations: " +
                         "Patient states that they have had a Reaction to medication within last 3 months " +

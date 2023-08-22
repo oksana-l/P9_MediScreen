@@ -4,15 +4,16 @@ import java.util.List;
 
 public class TriggerTerms {
     public static List<String> TERMINOLOGY = List.of(
-            "Hémoglobine", "Hemoglobin",
-            "Microalbumine", "Microalbumin",
-            "Taille", "Height",
-            "Poids", "Weight",
-            "Fumeur", "Smoker",
-            "Anormal", "Abnormal",
-            "Cholestérol", "Cholesterol",
-            "Vertige", "Dizziness",
-            "Rechute", "Relapse",
-            "Réaction", "Reaction",
-            "Anticorps", "Antibodies");
+            "hémoglobine", "Hemoglobin",
+            "microalbumine", "Microalbumin",
+            "taille", "Height",
+            "poids", "Weight",
+            "fumeur", "Smoker",
+            "fume", "smocks",
+            "anormal", "Abnormal",
+            "cholestérol", "Cholesterol",
+            "vertige", "Dizziness",
+            "rechute", "Relapse",
+            "réaction", "Reaction",
+            "anticorps", "Antibodies");
 }

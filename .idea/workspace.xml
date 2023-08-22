@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ef8c7c-3106-47b8-ad0e-c56215ad7dc9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Assessment/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Assessment/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/main/java/com/OCR/P9_MediScreen_Assessment/constants/TriggerTerms.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/main/java/com/OCR/P9_MediScreen_Assessment/constants/TriggerTerms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/main/java/com/OCR/P9_MediScreen_Assessment/service/AssessmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/main/java/com/OCR/P9_MediScreen_Assessment/service/AssessmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/test/java/com/OCR/P9_MediScreen_Assessment/service/AssessmentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/test/java/com/OCR/P9_MediScreen_Assessment/service/AssessmentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Note/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Note/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Note/src/main/java/com/OCR/P9_MediScreen_Note/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Note/src/main/java/com/OCR/P9_MediScreen_Note/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/java/com/OCR/P9_MediScreen_PatientInfo/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/java/com/OCR/P9_MediScreen_PatientInfo/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/java/com/OCR/P9_MediScreen_PatientInfo/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/java/com/OCR/P9_MediScreen_PatientInfo/service/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/resources/Patients.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P9_MediScreen_UI/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_UI/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,12 +90,13 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/oksanaleroy/Downloads/P9_MediScreen",
+    "last_opened_file_path": "/Users/oksanaleroy/Downloads/P9_MediScreen/P9_MediScreen_Assessment",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -105,7 +119,7 @@
       <recent name="$PROJECT_DIR$/../P9_MediScreen_UI/src/main/resources/templates/" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.P9MediScreenNoteApplication">
+  <component name="RunManager" selected="Docker.P9_MediScreen_Assessment/Dockerfile">
     <configuration name="P9MediScreenNoteApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.OCR.P9_MediScreen_Note.P9MediScreenNoteApplication" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../P9_MediScreen_Note" />
@@ -146,6 +160,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AssessmentServiceTest.shouldGetRapportByPatientIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P9_MediScreen_Assessment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.OCR.P9_MediScreen_Assessment.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.OCR.P9_MediScreen_Assessment.service" />
+      <option name="MAIN_CLASS_NAME" value="com.OCR.P9_MediScreen_Assessment.service.AssessmentServiceTest" />
+      <option name="METHOD_NAME" value="shouldGetRapportByPatientIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="patientServiceTest.shouldDeletePatientByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P9_MediScreen_PatientInfo" />
       <extension name="coverage">
@@ -157,22 +187,6 @@
       <option name="PACKAGE_NAME" value="com.OCR.P9_MediScreen_PatientInfo.serviceTest" />
       <option name="MAIN_CLASS_NAME" value="com.OCR.P9_MediScreen_PatientInfo.serviceTest.patientServiceTest" />
       <option name="METHOD_NAME" value="shouldDeletePatientByIdTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="patientServiceTest.shouldGetPatientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P9_MediScreen_PatientInfo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.OCR.P9_MediScreen_PatientInfo.serviceTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.OCR.P9_MediScreen_PatientInfo.serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.OCR.P9_MediScreen_PatientInfo.serviceTest.patientServiceTest" />
-      <option name="METHOD_NAME" value="shouldGetPatientTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,19 +205,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="P9_MediScreen_Assessment/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="P9_MediScreen_Assessment/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.P9MediScreenNoteApplication" />
       <item itemvalue="Application.P9MediScreenUiApplication" />
       <item itemvalue="Application.P9MediScreenPatientInfoApplication" />
+      <item itemvalue="Docker.P9_MediScreen_Assessment/Dockerfile" />
+      <item itemvalue="JUnit.AssessmentServiceTest.shouldGetRapportByPatientIdTest" />
       <item itemvalue="JUnit.patientServiceTest.shouldDeletePatientByIdTest" />
-      <item itemvalue="JUnit.patientServiceTest.shouldGetPatientTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.P9_MediScreen_Assessment/Dockerfile" />
+        <item itemvalue="JUnit.AssessmentServiceTest.shouldGetRapportByPatientIdTest" />
         <item itemvalue="Application.P9MediScreenUiApplication" />
         <item itemvalue="Application.P9MediScreenPatientInfoApplication" />
         <item itemvalue="JUnit.patientServiceTest.shouldDeletePatientByIdTest" />
-        <item itemvalue="JUnit.patientServiceTest.shouldGetPatientTest" />
       </list>
     </recent_temporary>
   </component>

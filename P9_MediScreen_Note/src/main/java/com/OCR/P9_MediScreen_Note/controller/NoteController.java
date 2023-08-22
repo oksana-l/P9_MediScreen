@@ -31,7 +31,6 @@ public class NoteController {
     @PostMapping
     public ResponseEntity<NoteDTO> addNote(@RequestBody @Valid NoteDTO noteDto,
                                            @RequestParam Integer patientId) {
-        noteDto.setId(null);
         noteDto.setPatientId(patientId);
         NoteDTO savedNoteDto = noteService.create(noteDto);
 
@@ -42,12 +41,6 @@ public class NoteController {
                 .toUri();
         return ResponseEntity.created(location)
                              .body(savedNoteDto);
-    }
-
-    @PostMapping(consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
-    public ResponseEntity<NoteDTO> addNoteForm(@Valid NoteDTO noteDto,
-                                               @RequestParam Integer patientId) {
-        return addNote(noteDto, patientId);
     }
 
     @PutMapping ("/{id}")

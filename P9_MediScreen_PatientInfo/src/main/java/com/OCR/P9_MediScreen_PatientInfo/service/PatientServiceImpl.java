@@ -63,28 +63,4 @@ public class PatientServiceImpl implements PatientService {
         return patientRepository.existsById(id);
     }
 
-//    public void insertDataFromExcel(Resource resource) throws IOException {
-//        try (InputStream inputStream = resource.getInputStream()) {
-//            Workbook workbook = WorkbookFactory.create(inputStream);
-//            Sheet sheet = workbook.getSheetAt(0);
-//
-//            for (Row row : sheet) {
-//                String firstName = row.getCell(1).getStringCellValue();
-//                String lastName = row.getCell(0).toString();
-//                String gender = row.getCell(3).toString();
-//                String address = row.getCell(4).getStringCellValue();
-//                String phoneNumber = row.getCell(5).getStringCellValue();
-//                LocalDate dateOfBirth = LocalDate.from(row.getCell(2).getLocalDateTimeCellValue());
-//
-//                PatientDTO patientDto = new PatientDTO();
-//                patientDto.setFirstName(firstName);
-//                patientDto.setLastName(lastName);
-//                patientDto.setDateOfBirth(dateOfBirth);
-//                patientDto.setGender(gender);
-//                patientDto.setAddress(address);
-//                patientDto.setPhoneNumber(phoneNumber);
-//                patientRepository.save(new Patient(patientDto));
-//            }
-//        }
-//    }
 }

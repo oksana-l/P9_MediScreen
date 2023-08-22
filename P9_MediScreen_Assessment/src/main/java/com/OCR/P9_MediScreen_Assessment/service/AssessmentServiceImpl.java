@@ -19,6 +19,8 @@ public class AssessmentServiceImpl implements AssessmentService {
 
     private final MicroservicePatientsProxy patientProxy;
     private final MicroserviceNotesProxy noteProxy;
+    String GENDER_F = "F";
+    String GENDER_M = "M";
     @Autowired
     public AssessmentServiceImpl(final MicroservicePatientsProxy patientProxy, final MicroserviceNotesProxy noteProxy) {
         this.patientProxy = patientProxy;
@@ -51,12 +53,12 @@ public class AssessmentServiceImpl implements AssessmentService {
         if (age > 30 && numberTriggerTerms >= 2) {
             riskCategory = DiabetesAssessment.BORDERLINE.getRiskLevel();
         } else if ((age > 30 && (numberTriggerTerms >= 6 && numberTriggerTerms <= 7)) ||
-                (patient.getGender().equals("F") && age < 30 && (numberTriggerTerms >= 4 && numberTriggerTerms <= 6)) ||
-                (patient.getGender().equals("M") && age < 30 && (numberTriggerTerms >= 3 && numberTriggerTerms <= 4))) {
+                (GENDER_F.equals(patient.getGender()) && age < 30 && (numberTriggerTerms >= 4 && numberTriggerTerms <= 6)) ||
+                (GENDER_M.equals(patient.getGender()) && age < 30 && (numberTriggerTerms >= 3 && numberTriggerTerms <= 4))) {
             riskCategory = DiabetesAssessment.IN_DANGER.getRiskLevel();
         } else if ((age > 30 && numberTriggerTerms >= 8) ||
-                (patient.getGender().equals("F") && age < 30 && numberTriggerTerms >= 7) ||
-                (patient.getGender().equals("M") && age < 30 && numberTriggerTerms >= 5)) {
+                (GENDER_F.equals(patient.getGender()) && age < 30 && numberTriggerTerms >= 7) ||
+                (GENDER_M.equals(patient.getGender()) && age < 30 && numberTriggerTerms >= 5)) {
             riskCategory = DiabetesAssessment.EARLY_ONSET.getRiskLevel();
         }
         return riskCategory;
@@ -72,8 +74,10 @@ public class AssessmentServiceImpl implements AssessmentService {
             wordSet.addAll(Arrays.asList(words));
 
             for (String word : wordSet) {
-                if (TriggerTerms.TERMINOLOGY.contains(word)) {
-                    totalKeywordCount++;
+                for (String term : TriggerTerms.TERMINOLOGY) {
+                    if (term.equalsIgnoreCase(word)) {
+                        totalKeywordCount++;
+                    }
                 }
             }
         }
