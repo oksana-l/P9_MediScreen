@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef8c7c-3106-47b8-ad0e-c56215ad7dc9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Assessment/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Assessment/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/main/java/com/OCR/P9_MediScreen_Assessment/constants/TriggerTerms.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/main/java/com/OCR/P9_MediScreen_Assessment/constants/TriggerTerms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/main/java/com/OCR/P9_MediScreen_Assessment/service/AssessmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/main/java/com/OCR/P9_MediScreen_Assessment/service/AssessmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/test/java/com/OCR/P9_MediScreen_Assessment/service/AssessmentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Assessment/src/test/java/com/OCR/P9_MediScreen_Assessment/service/AssessmentServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Note/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Note/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_Note/src/main/java/com/OCR/P9_MediScreen_Note/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_Note/src/main/java/com/OCR/P9_MediScreen_Note/controller/NoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/java/com/OCR/P9_MediScreen_PatientInfo/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/java/com/OCR/P9_MediScreen_PatientInfo/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/java/com/OCR/P9_MediScreen_PatientInfo/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/java/com/OCR/P9_MediScreen_PatientInfo/service/PatientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_PatientInfo/src/main/resources/Patients.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/P9_MediScreen_UI/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/P9_MediScreen_UI/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="25ef8c7c-3106-47b8-ad0e-c56215ad7dc9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
